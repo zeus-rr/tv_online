@@ -69,46 +69,7 @@
     <h1>📺 Painel Multi Câmeras + TV</h1>
     <div class="grid">
 
-        <!-- TV 1 -->
-        <div class="card">
-            <div class="header"><span class="status"></span>RedeTV Paraná</div>
-            <video id="tv1" muted autoplay controls></video>
-            <button onclick="fullscreen('tv1')">Tela Cheia</button>
-        </div>
-
-        <!-- TV 2 -->
-        <div class="card">
-            <div class="header"><span class="status"></span>TV Pampa RS</div>
-            <video id="tv2" muted autoplay controls></video>
-            <button onclick="fullscreen('tv2')">Tela Cheia</button>
-        </div>
-
-        <!-- TV 3 -->
-        <div class="card">
-            <div class="header"><span class="status"></span>Rede Web TV Itajaí</div>
-            <video id="tv3" muted autoplay controls></video>
-            <button onclick="fullscreen('tv3')">Tela Cheia</button>
-        </div>
-
-        <!-- TV 4 -->
-        <div class="card">
-            <div class="header"><span class="status"></span>BAND RS</div>
-            <iframe id="tv4" allowfullscreen
-                src="https://beyond.spalla.io/player/?live=01995331-340e-7730-9dc8-ddcbf32b45a1">
-            </iframe>
-            <button onclick="fullscreen('tv4')">Tela Cheia</button>
-        </div>
-
-        <!-- TV 5 -->
-        <div class="card">
-            <div class="header"><span class="status"></span>N-PARAGUAY</div>
-            <iframe id="tv5" allowfullscreen
-                src="https://www.desdepylabs.com/External/tvaccion/npy">
-            </iframe>
-            <button onclick="fullscreen('tv5')">Tela Cheia</button>
-        </div>
-
-        <!-- Câmeras -->
+           <!-- Câmeras -->
         <div class="card">
             <div class="header"><span class="status"></span>Ponte da Amizade - Sentido Brasil</div>
             <iframe allowfullscreen src="https://playerv.logicahost.com.br/video-ip-camera/portovelhomamore//false/false/V2tjeGMyRXhjRmhQU0dSUFVYcFdlbGxxU210alJtdDVVbTA1YVUwd05IZFVSekZQWkcxS1ZFNVhiR3BhZWpBNStS/16:9/V1ZWb1UwMUhUa2xVVkZwTlpWUm5PUT09K1I=/fozpontedaamizadesentidobrasil.stream/?autoplay=1&mute=1"></iframe>
@@ -129,25 +90,9 @@
             <iframe allowfullscreen src="https://playerv.logicahost.com.br/video-ip-camera/portaldacidade//false/false/V2tjeGMyRXhjRmhQU0dST1lWUldlbGxxU210alJtdDVVbTA1YVUwd05IZFVSekZQWkcxS1ZFNVhiR3BhZWpBNStS/16:9/aHR0cHM6Ly8rMQ==/fozsentidopontedaamizade01.stream/?autoplay=1&mute=1"></iframe>
         </div>
 
-        <!-- Nova Câmera -->
-        <div class="card">
-            <div class="header"><span class="status"></span>Praia do Paraíso - RS</div>
-            <iframe id="cam5" allowfullscreen 
-                src="https://g3.ipcamlive.com/player/player.php?alias=69c282bb706bd&autoplay=1">
-            </iframe>
-            <button onclick="fullscreen('cam5')">Tela Cheia</button>
-        </div>
-
-    </div>
-
+      
     <script>
-        const canais = [
-            { id: "tv1", url: "https://tv01.zas.media:1936/redetvparana/redetvparana/playlist.m3u8" },
-            { id: "tv2", url: "https://video04.logicahost.com.br/tvpampa/tvpampa/playlist.m3u8" },
-            { id: "tv3", url: "https://cdn.live.br1.jmvstream.com/webtv/AVJ-15086/playlist/playlist.m3u8" }
-        ];
-
-        canais.forEach(c => {
+               canais.forEach(c => {
             const video = document.getElementById(c.id);
             if (!video) return;
 
